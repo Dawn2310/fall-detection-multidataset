@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fall-detection-sisfall"
+version = "0.1.0"
+description = "Wearable sensor fusion for fall detection on the SisFall dataset"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scipy>=1.10",
+    "scikit-learn>=1.3",
+    "matplotlib>=3.7",
+    "seaborn>=0.12",
+    "tqdm>=4.65",
+    "joblib>=1.3",
+]
+
+[project.optional-dependencies]
+dl = ["tensorflow>=2.13"]
+dev = ["jupyter", "ipykernel", "black", "ruff", "pytest"]
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+# Chi bat loi that su (pyflakes + loi cu phap), khong ep style can le.
+# F = unused import / bien chua dinh nghia; E9 = loi cu phap.
+select = ["F", "E9"]
+ignore = []

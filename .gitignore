@@ -1,0 +1,96 @@
+# ─── Dataset (qua lon, tai ve theo huong dan trong data/README.md) ───────────
+9.5Dataset/
+data/*.zip
+data/*.tar.gz
+# Raw datasets placed at repo root (download separately, do NOT commit)
+SisFall Dataset/
+K-Fall dataset/
+UMAFall_Dataset_corrected_version/
+UP-Fall dataset/
+Tạm/
+Tạm*/
+
+# ─── Ket qua sinh ra khi chay (khong commit) ─────────────────────────────────
+results/figures/
+results/models/
+results/metrics/
+results/*.log
+*.pkl
+*.keras
+*.h5
+*.pt
+*.log
+
+# ─── Cache du lieu da preprocess (qua lon, tai sinh duoc) ────────────────────
+data/cache/
+*.npz
+
+# ─── Bai bao PDF (ban quyen, khong commit) ───────────────────────────────────
+papers/
+*.pdf
+# Exception: keep paper figures (PDFs) since they are the published artifact
+!paper/figures/
+!paper/figures/*.pdf
+
+# ─── MDPI template artifacts (do NOT commit zip uploads / sample template) ───
+paper/paper_overleaf.zip
+paper/MDPI_Article_Template*.zip
+paper/template.tex
+paper/_make_zip.py
+
+# ─── MDPI template class files (copyrighted by MDPI — download from journal) ──
+paper/Definitions/
+
+# ─── Cover letter (private editor correspondence, not for public repo) ───────
+paper/cover_letter.md
+
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ─── Moi truong ao ────────────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+.env
+*.env
+
+# ─── Jupyter ──────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ─── IDE ──────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ─── Claude Code ──────────────────────────────────────────────────────────────
+.claude/
+
+# ─── TensorFlow / ML logs ─────────────────────────────────────────────────────
+logs/
+runs/
+wandb/
+mlruns/
+*.tfevents.*
+
+# ─── Du lieu tam thoi ─────────────────────────────────────────────────────────
+*.tmp
+*.bak
+*.cache
+
+# ─── Word Document Generator ──────────────────────────────────────────────────
+paper/generate_docx.py
+paper/paper_full.docx
+
+

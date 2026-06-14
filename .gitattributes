@@ -1,0 +1,13 @@
+# Normalize line endings to LF on all platforms
+* text=auto eol=lf
+
+# Binary files - no conversion
+*.pkl binary
+*.keras binary
+*.h5 binary
+*.png binary
+*.pdf binary
+*.zip binary
+
+# Ignore Jupyter Notebooks in GitHub language statistics
+*.ipynb linguist-detectable=false
